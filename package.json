@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/voynovdev/pure-function.git"
+    "url": "git+https://github.com/voynovdev/matchers.git"
   },
   "author": "VoynovDev",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/voynovdev/pure-function/issues"
+    "url": "https://github.com/voynovdev/matchers/issues"
   },
-  "homepage": "https://github.com/voynovdev/pure-function#readme",
+  "homepage": "https://github.com/voynovdev/matchers#readme",
   "description": "",
   "devDependencies": {
     "@babel/cli": "^7.24.6",

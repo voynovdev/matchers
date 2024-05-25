@@ -1,28 +1,18 @@
-import { checkHealth } from "../checkHealth.js";
+import { sortArray } from "../sortArray";
 
-test("Check Health Test1", () => {
-	let player = {
-		name: "Маг",
-		health: 90
-	}
-	const result = checkHealth(player);
-	expect(result).toBe("Healthy")
-})
-
-test("Check Health Test2", () => {
-	let player = {
-		name: "Маг",
-		health: 45
-	}
-	const result = checkHealth(player);
-	expect(result).toBe("Wounded")
-})
-
-test("Check Health Test3", () => {
-	let player = {
-		name: "Маг",
-		health: 7
-	}
-	const result = checkHealth(player);
-	expect(result).toBe("Critical")
+// eslint-disable-next-line
+test("Check sort array", () => {
+	const array = [
+		{name: 'мечник', health: 10},
+		{name: 'маг', health: 100},
+		{name: 'лучник', health: 80},
+	];
+	const arrayExpected = [
+		{name: 'маг', health: 100},
+		{name: 'лучник', health: 80},
+		{name: 'мечник', health: 10}		
+	];
+	const result = sortArray(array);
+	// eslint-disable-next-line
+	expect(result).toEqual(arrayExpected);
 })
